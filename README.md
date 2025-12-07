@@ -73,6 +73,7 @@ GitHub Kaynak
 Kodu 
 https://github.com/ycelebi4/WebTasarimDersiProjesi.git 
 Canlı Site Linki https://231307036projeotel.netlify.app/ 
+
 KAYNAKLAR  
  [1] Kocaeli Üniversitesi, Web Tasarımı Proje İsterleri  
  [2] HTML Codex – Hotelier Template  
