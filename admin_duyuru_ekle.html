@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Admin Panel - Duyuru Ekleme</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        body { background-color: #f4f7f6; } 
+        .admin-container { 
+            display: flex; 
+            min-height: 100vh;
+            padding-top: 0 !important; 
+        }
+        .sidebar { 
+            width: 250px; 
+            background-color: #0F172B; /* Hotelier Koyu Mavi */
+            padding: 20px; 
+            color: white; 
+            flex-shrink: 0;
+            box-shadow: 4px 0 10px rgba(0,0,0,0.1);
+        }
+        .sidebar h3 { color: #FEA116; /* Hotelier Turuncu */ }
+        .sidebar a { 
+            display: block; 
+            color: #ecf0f1; 
+            padding: 10px 0; 
+            text-decoration: none; 
+            border-bottom: 1px solid #1f2a40; 
+            transition: 0.3s;
+        }
+        .sidebar a:hover { 
+            color: #FEA116; 
+            padding-left: 5px; 
+        }
+        .main-content { 
+            flex-grow: 1; 
+            padding: 30px; 
+        }
+        .form-section { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="admin-container">
+    
+    <div class="sidebar">
+        <h3><i class="fa fa-cog me-2"></i> Yönetici Paneli</h3>
+        <hr style="border-color: #FEA116;">
+        <a href="index.html" target="_blank"><i class="fa fa-home me-2"></i> Siteyi Görüntüle</a>
+        <a href="admin_duyuru_ekle.html" class="text-warning"><i class="fa fa-bullhorn me-2"></i> Duyuru Yönetimi</a>
+        <a href="admin_rezervasyonlar.html"><i class="fa fa-list-alt me-2"></i> Rezervasyonlar</a>
+        <a href="sayilarla_otelimiz.html" target="_blank"><i class="fa fa-chart-bar me-2"></i> İstatistikler (Önizleme)</a>
+        <a href="#"><i class="fa fa-sign-out-alt me-2"></i> Çıkış Yap</a>
+    </div>
+
+    <div class="main-content">
+        <h2 class="mb-4 text-primary">Yeni Duyuru Ekle</h2>
+        
+        <div class="form-section">
+            <form action="#" method="POST">
+                
+                <div class="mb-4">
+                    <label for="duyuruBaslik" class="form-label fw-bold">Duyuru Başlığı</label>
+                    <input type="text" class="form-control p-3" id="duyuruBaslik" placeholder="Örn: %30 Erken Rezervasyon Fırsatı" required>
+                </div>
+
+                <div class="mb-4">
+                    <label for="duyuruIcerik" class="form-label fw-bold">Duyuru İçeriği</label>
+                    <textarea class="form-control p-3" id="duyuruIcerik" rows="8" placeholder="Detaylı duyuru metnini buraya girin..."></textarea>
+                </div>
+                
+                <h5 class="mt-5 mb-3 text-secondary">Eklenecek Belgeler / Görseller (Yönetim Mantığı)</h5>
+
+                <div class="row">
+                    
+                    <div class="col-md-6 mb-4">
+                        <label for="resimYukle" class="form-label">Görsel Ekle (JPEG, PNG)</label>
+                        <input class="form-control" type="file" id="resimYukle" accept=".jpg, .jpeg, .png" disabled>
+                        <div class="form-text">Duyuru kapak görseli.</div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <label for="pdfYukle" class="form-label">PDF Belgesi Ekle</label>
+                        <input class="form-control" type="file" id="pdfYukle" accept=".pdf" disabled>
+                        <div class="form-text">Detaylı bilgi için PDF eklenebilir.</div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <label for="wordYukle" class="form-label">Word Belgesi Ekle (Opsiyonel)</label>
+                        <input class="form-control" type="file" id="wordYukle" accept=".doc, .docx" disabled>
+                        <div class="form-text">Word belgesi eklenebilir.</div>
+                    </div>
+                    
+                    <div class="col-12 mt-4">
+                        <button type="submit" class="btn btn-primary py-3 px-5"><i class="fa fa-save me-2"></i> Duyuruyu Yayınla</button>
+                        <button type="reset" class="btn btn-secondary py-3 px-5">Temizle</button>
+                        <div class="form-text mt-2 text-danger">Bu arayüz sadece görsel tasarımdır. Sunucu kodu çalışmaz.</div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

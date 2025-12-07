@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tüm Duyurular - Proje Otel</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Otel Duyuruları, Kampanyalar, Fırsatlar" name="keywords">
+    <meta content="Proje Otel'in geçmiş ve güncel tüm duyurularının listelendiği sayfa." name="description">
+
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <div id="spinner" class="bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Yükleniyor...</span>
+            </div>
+        </div>
+        <div class="container-fluid bg-dark px-0">
+            <div class="row gx-0">
+                <div class="col-lg-3 bg-dark d-none d-lg-block">
+                    <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                        <h1 class="m-0 text-primary text-uppercase">Proje Otel</h1>
+                    </a>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row gx-0 bg-white d-none d-lg-flex">
+                        <div class="col-lg-7 px-5 text-start">
+                            <div class="h-100 d-inline-flex align-items-center py-2 me-4">
+                                <i class="fa fa-envelope text-primary me-2"></i>
+                                <p class="mb-0">info@Projeotel.com</p>
+                            </div>
+                            <div class="h-100 d-inline-flex align-items-center py-2">
+                                <i class="fa fa-phone-alt text-primary me-2"></i>
+                                <p class="mb-0">+90 000 000 00 00</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 px-5 text-end">
+                            <div class="d-inline-flex align-items-center py-2">
+                                <a class="me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="me-3" href=""><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
+                        <a href="index.html" class="navbar-brand d-block d-lg-none">
+                            <h1 class="m-0 text-primary text-uppercase">Proje Otel</h1>
+                        </a>
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto py-0">
+                                <a href="index.html" class="nav-item nav-link">Ana Sayfa</a>
+                                <a href="about.html" class="nav-item nav-link">Hakkımızda</a>
+                                <a href="service.html" class="nav-item nav-link">Birimlerimiz</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Odalarımız</a>
+                                    <div class="dropdown-menu rounded-0 m-0">
+                                        <a href="room.html" class="dropdown-item">Tüm Odalar</a>
+                                        <a href="room_suit.html" class="dropdown-item">Suit Oda</a>
+                                        <a href="room_standart.html" class="dropdown-item">Standart Oda</a>
+                                        <a href="room_family.html" class="dropdown-item">Aile Odası</a>
+                                    </div>
+                                </div>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Sayfalar</a>
+                                    <div class="dropdown-menu rounded-0 m-0">
+                                        
+                                        <a href="sayilarla_otelimiz.html" class="dropdown-item">Sayılarla Otelimiz</a>
+                                        <a href="tum_duyurular.html" class="dropdown-item active">Tüm Duyurular</a>
+                                    </div>
+                                </div>
+                                <a href="misyon_vizyon.html" class="nav-item nav-link">Misyon   Vizyon </a>
+                                <a href="contact.html" class="nav-item nav-link">İletişim</a>
+                                <a href="admin_duyuru_ekle.html" class="nav-item nav-link" target="_blank">Admin Giriş</a>
+                            </div>
+                            <a href="booking.html" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Rezervasyon Yap<i class="fa fa-arrow-right ms-3"></i></a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid page-header mb-5 p-0" style="background-image: url(img/carousel-1.jpg);">
+            <div class="container-fluid page-header-inner py-5">
+                <div class="container text-center pb-5">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Tüm Duyurular ve Kampanyalar</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="index.html">Ana Sayfa</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Duyurular</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="section-title text-center text-primary text-uppercase">Fırsatlar ve Kampanyalar</h6>
+                    <h1 class="mb-5">Tarihe Göre Sıralanmış <span class="text-primary text-uppercase">Tüm Duyurularımız</span></h1>
+                </div>
+
+                <div class="row g-4 justify-content-center mb-4">
+                    
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Yılbaşı Gala Rezervasyonu</h5>
+                                    <small class="fa fa-calendar text-primary pt-1"> 28.11.2025</small>
+                                </div>
+                                <p class="text-body mb-3">Canlı müzik ve özel menü ile yeni yılı kutlamak için yerinizi erken ayırtın. İlk 50 misafire özel indirimler!</p>
+                                <a href="#" class="btn btn-sm btn-primary py-2 px-4" data-bs-toggle="modal" data-bs-target="#duyuruModal1">Detaylı Gör</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Kış SPA İndirimleri Başladı!</h5>
+                                    <small class="fa fa-calendar text-primary pt-1"> 10.11.2025</small>
+                                </div>
+                                <p class="text-body mb-3">Kış aylarında ruhunuzu dinlendirin. Tüm masaj paketlerinde %15 indirim fırsatı.</p>
+                                <a href="#" class="btn btn-sm btn-primary py-2 px-4" data-bs-toggle="modal" data-bs-target="#duyuruModal2">Detaylı Gör</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Yeni Restoran Menüsü</h5>
+                                    <small class="fa fa-calendar text-primary pt-1"> 01.10.2025</small>
+                                </div>
+                                <p class="text-body mb-3">Şefimizin hazırladığı yeni mevsimlik lezzetleri tadın. İlk hafta deneme menüsü %10 indirimli.</p>
+                                <a href="#" class="btn btn-sm btn-primary py-2 px-4" data-bs-toggle="modal" data-bs-target="#duyuruModal3">Detaylı Gör</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row g-4 justify-content-center"> 
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Kocaeli Üniversitesi Öğrencilerine Özel Fırsat</h5>
+                                    <small class="fa fa-calendar text-primary pt-1"> 05.09.2025</small>
+                                </div>
+                                <p class="text-body mb-3">Kocaeli Üniversitesi öğrencisi veya personeli misafirlerimiz için %10 ek indirim fırsatı.</p>
+                                <a href="#" class="btn btn-sm btn-primary py-2 px-4" data-bs-toggle="modal" data-bs-target="#duyuruModal4">Detaylı Gör</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Yıl Dönümü Kutlaması Kampanyası</h5>
+                                    <small class="fa fa-calendar text-primary pt-1"> 15.08.2025</small>
+                                </div>
+                                <p class="text-body mb-3">Evlilik veya tanışma yıl dönümünüz için özel oda süslemesi ve ücretsiz şarap ikramı kampanyası.</p>
+                                <a href="#" class="btn btn-sm btn-primary py-2 px-4" data-bs-toggle="modal" data-bs-target="#duyuruModal5">Detaylı Gör</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 text-center mt-5 wow fadeInUp" data-wow-delay="0.9s">
+                    <nav aria-label="Duyuru Sayfaları">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">Önceki</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Sonraki</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container-fluid bg-dark text-light footer wow fadeIn py-5 my-0" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="bg-primary rounded p-4">
+                            <a href="index.html"><h1 class="text-white text-uppercase mb-3">Proje Otel</h1></a>
+                            <p class="text-white mb-0" style="font-size: 0.9rem;">
+                                Proje Yazar Bilgisi: <br>Yusuf Çelebi<br>231307036
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <h6 class="section-title text-start text-primary text-uppercase mb-4">İletişim</h6>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>İzmit, Kocaeli, Türkiye</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+90 000 000 00 00</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@Projeotel.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <h6 class="section-title text-start text-primary text-uppercase mb-4">Şirket</h6>
+                        <a class="btn btn-link" href="about.html">Hakkımızda</a>
+                        <a class="btn btn-link" href="service.html">Birimlerimiz</a>
+                        <a class="btn btn-link" href="misyon_vizyon.html">Misyon & Vizyon</a>
+                        <a class="btn btn-link" href="tum_duyurular.html">Duyurular</a>
+                        <a class="btn btn-link" href="contact.html">İletişim</a>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <h6 class="section-title text-start text-primary text-uppercase mb-4">Hizmetler</h6>
+                        <a class="btn btn-link" href="service.html">Yemek & Restoran</a>
+                        <a class="btn btn-link" href="service.html">Spa & Fitness</a>
+                        <a class="btn btn-link" href="service.html">Etkinlikler</a>
+                        <a class="btn btn-link" href="booking.html">Online Rezervasyon</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Proje Otel</a>, Tüm Hakları Saklıdır. 
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="index.html">Ana Sayfa</a>
+                                <a href="contact.html">Yardım</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="duyuruModal1" tabindex="-1" aria-labelledby="duyuruModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-primary" id="duyuruModal1Label">Yılbaşı Gala Rezervasyonu Detayları</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Gecenin Programı</h6>
+                        <p>Yılbaşı gecesi programımız saat 20:00'de kokteyl ile başlayacak, 21:30'da Ana Salon'da Canlı Orkestra eşliğinde devam edecektir. Gece boyunca sürpriz gösteriler ve çekilişler yapılacaktır.</p>
+                        <p><strong>Fiyatlandırma:</strong> Kişi başı 1200 TL (Yemek ve sınırsız yerli içecek dahil).</p>
+                        <hr>
+                        <h6>Eklenebilir Dosya Simülasyonu (İçerik Yönetim Mantığı)</h6>
+                        <p>Menü: <a href="#" target="_blank"><i class="fa fa-file-pdf text-danger me-1"></i> Yılbaşı Özel Menüsü (PDF)</a></p>
+                        <p>Görsel: <a href="#" target="_blank"><i class="fa fa-image text-success me-1"></i> Gala Afişi</a></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                        <a href="booking.html" class="btn btn-primary">Rezervasyon Yap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="duyuruModal2" tabindex="-1" aria-labelledby="duyuruModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-primary" id="duyuruModal2Label">Kış SPA İndirimleri Detayları</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Kampanya Koşulları</h6>
+                        <p>Kış dönemi (Aralık-Şubat) boyunca geçerli olan bu indirim tüm masaj ve cilt bakımı paketlerinde geçerlidir. Hafta sonu %10, hafta içi %15 indirim uygulanır.</p>
+                        <hr>
+                        <h6>Eklenebilir Dosya Simülasyonu</h6>
+                        <p>Belge: <a href="#" target="_blank"><i class="fa fa-file-word text-info me-1"></i> Kampanya Şartnamesi (Word)</a></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="duyuruModal3" tabindex="-1" aria-labelledby="duyuruModal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-primary" id="duyuruModal3Label">Yeni Restoran Menüsü Detayları</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Yeni menümüz, Şef Ahmet Kaya'nın imzasını taşıyan yöresel ve modern lezzetleri bir araya getiriyor. İlk haftaya özel deneme menüsü fırsatını kaçırmayın.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="duyuruModal4" tabindex="-1" aria-labelledby="duyuruModal4Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-primary" id="duyuruModal4Label">Kocaeli Üniversitesi Öğrenci İndirimi Detayları</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Kampanya Koşulları</h6>
+                        <p>Bu özel indirimden faydalanmak için, check-in sırasında geçerli öğrenci veya personel kimlik kartının ibraz edilmesi zorunludur. İndirim sadece oda konaklama ücreti üzerinden hesaplanır.</p>
+                        <hr>
+                        <h6>Eklenebilir Dosya Simülasyonu</h6>
+                        <p>Belge: <a href="#" target="_blank"><i class="fa fa-file-pdf text-danger me-1"></i> Kampanya Detayları (PDF)</a></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                        <a href="contact.html" class="btn btn-primary">Bilgi Alın</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="duyuruModal5" tabindex="-1" aria-labelledby="duyuruModal5Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-primary" id="duyuruModal5Label">Yıl Dönümü Kutlaması Kampanyası Detayları</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Hizmet Detayları</h6>
+                        <p>Evlilik veya tanışma yıl dönümünü otelimizde kutlayan misafirlerimize, özel bir karşılama, oda süslemesi ve yöresel şarap ikramı ücretsizdir. Rezervasyon notuna özel taleplerinizi ekleyebilirsiniz.</p>
+                        <hr>
+                        <h6>Eklenebilir Dosya Simülasyonu</h6>
+                        <p>Görsel: <a href="#" target="_blank"><i class="fa fa-image text-success me-1"></i> Oda Süslemesi Örnekleri</a></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                        <a href="booking.html" class="btn btn-primary">Rezervasyon Yap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Admin Panel - Rezervasyon Listesi</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        body { background-color: #f4f7f6; } 
+        .admin-container { 
+            display: flex; 
+            min-height: 100vh;
+            padding-top: 0 !important; 
+        }
+        .sidebar { 
+            width: 250px; 
+            background-color: #0F172B; /* Hotelier Koyu Mavi */
+            padding: 20px; 
+            color: white; 
+            flex-shrink: 0;
+            box-shadow: 4px 0 10px rgba(0,0,0,0.1);
+        }
+        .sidebar h3 { color: #FEA116; /* Hotelier Turuncu */ }
+        .sidebar a { 
+            display: block; 
+            color: #ecf0f1; 
+            padding: 10px 0; 
+            text-decoration: none; 
+            border-bottom: 1px solid #1f2a40; 
+            transition: 0.3s;
+        }
+        .sidebar a:hover { 
+            color: #FEA116; 
+            padding-left: 5px; 
+        }
+        .main-content { 
+            flex-grow: 1; 
+            padding: 30px; 
+        }
+        /* İyileştirme: Table-section'ı sarmalayan div ile duyarlılık eklendi */
+        .table-responsive-section { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="admin-container">
+    
+    <div class="sidebar">
+        <h3><i class="fa fa-cog me-2"></i> Yönetici Paneli</h3>
+        <hr style="border-color: #FEA116;">
+        <a href="index.html" target="_blank"><i class="fa fa-home me-2"></i> Siteyi Görüntüle</a>
+        <a href="admin_duyuru_ekle.html"><i class="fa fa-bullhorn me-2"></i> Duyuru Yönetimi</a>
+        <a href="admin_rezervasyonlar.html" class="text-warning"><i class="fa fa-list-alt me-2"></i> Rezervasyonlar</a>
+        <a href="sayilarla_otelimiz.html" target="_blank"><i class="fa fa-chart-bar me-2"></i> İstatistikler (Önizleme)</a>
+        <a href="#"><i class="fa fa-sign-out-alt me-2"></i> Çıkış Yap</a>
+    </div>
+
+    <div class="main-content">
+        <h2 class="mb-4 text-primary">Tüm Rezervasyonlar</h2>
+        
+        <div class="table-responsive-section">
+            <h5 class="mb-3">Son Gelen Rezervasyon Listesi</h5>
+
+            <div class="row mb-3 g-2">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Müşteri Adına Göre Ara...">
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select">
+                        <option selected>Tüm Durumlar</option>
+                        <option>Onay Bekleyen</option>
+                        <option>Onaylandı</option>
+                        <option>İptal Edildi</option>
+                    </select>
+                </div>
+                <div class="col-md-5 text-end">
+                    <button class="btn btn-secondary me-2"><i class="fa fa-sync-alt me-1"></i> Yenile</button>
+                    <button class="btn btn-success"><i class="fa fa-download me-1"></i> Excel İndir</button>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-hover table-striped">
+                    <thead class="bg-light">
+                        <tr>
+                            <th>#ID</th>
+                            <th>Müşteri Adı</th>
+                            <th>Giriş/Çıkış</th>
+                            <th>Oda Tipi</th>
+                            <th>Gece Sayısı</th>
+                            <th>Durum</th>
+                            <th>Aksiyonlar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>R00124</td>
+                            <td>Ayşe Yılmaz</td>
+                            <td>2025-12-10 / 2025-12-15</td>
+                            <td>Suit Oda</td>
+                            <td>5</td>
+                            <td><span class="badge bg-success">Onaylandı</span></td>
+                            <td>
+                                <button class="btn btn-sm btn-info me-1"><i class="fa fa-eye"></i></button>
+                                <button class="btn btn-sm btn-danger"><i class="fa fa-times"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>R00125</td>
+                            <td>Burak Demir</td>
+                            <td>2026-01-05 / 2026-01-08</td>
+                            <td>Standart Çift Kişilik</td>
+                            <td>3</td>
+                            <td><span class="badge bg-warning text-dark">Onay Bekleyen</span></td>
+                            <td>
+                                <button class="btn btn-sm btn-info me-1"><i class="fa fa-eye"></i></button>
+                                <button class="btn btn-sm btn-success"><i class="fa fa-check"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>R00126</td>
+                            <td>Cemile Kaya</td>
+                            <td>2025-11-20 / 2025-11-22</td>
+                            <td>Aile Odası</td>
+                            <td>2</td>
+                            <td><span class="badge bg-danger">İptal Edildi</span></td>
+                            <td>
+                                <button class="btn btn-sm btn-info me-1"><i class="fa fa-eye"></i></button>
+                                <button class="btn btn-sm btn-secondary" disabled><i class="fa fa-trash-alt"></i></button>
+                            </td>
+                        </tr>
+                        </tbody>
+                </table>
+            </div>
+
+            <nav class="mt-3">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled"><a class="page-link" href="#">Önceki</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Sonraki</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/tempusdominus/js/moment.min.js"></script>
+<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
