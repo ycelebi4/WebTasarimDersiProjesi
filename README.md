@@ -61,18 +61,19 @@ VII.  SONUÇ
 Bu projede otelcilik sektörüne uygun kurumsal ve profesyonel bir web sitesi geliştirilmiştir. 
 Proje isterleri tamamen karşılanmış olup kullanıcı deneyimi, mobil uyumluluk ve çok sayfalı 
 site yapısı başarıyla uygulanmıştır. 
-VIII.  
-PROJE LİNKLERİ  
+
+VIII.  PROJE LİNKLERİ  
 Bilgi 
 Link 
 Proje Dosya 
 Paylaşım Linki 
-https://drive.google.com/drive/folders/17-chqy
-kxSKIHpv1vVpPFCmpvAeRs2gi?usp=sharing 
-GitHub Kaynak 
-Kodu 
+https://drive.google.com/drive/folders/17-chqykxSKIHpv1vVpPFCmpvAeRs2gi?usp=sharing 
+
+GitHub Kaynak Kodu 
 https://github.com/ycelebi4/WebTasarimDersiProjesi.git 
-Canlı Site Linki https://231307036projeotel.netlify.app/ 
+
+Canlı Site Linki 
+https://231307036projeotel.netlify.app/ 
 
 KAYNAKLAR  
  [1] Kocaeli Üniversitesi, Web Tasarımı Proje İsterleri  
