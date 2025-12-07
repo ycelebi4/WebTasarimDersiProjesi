@@ -67,7 +67,7 @@ Bilgi
 Link 
 Proje Dosya 
 Paylaşım Linki 
-https://drive.google.com/drive/folders/17-chqykxSKIHpv1vVpPFCmpvAeRs2gi?usp=sharing 
+https://drive.google.com/drive/folders/17-chqy-kxSKIHpv1vVpPFCmpvAeRs2gi?usp=sharing 
 
 GitHub Kaynak Kodu 
 https://github.com/ycelebi4/WebTasarimDersiProjesi.git 
